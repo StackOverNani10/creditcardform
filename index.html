@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creditcard Form</title>
+    <link rel="stylesheet" href="assets/css/styles.css"/> 
+</head>
+<body>
+    <!-- UI CARD -->
+    <div class="card">
+        <div class="card__header">
+            <h2 class="bank__name">
+                monobank <span> | Universal Bank</span>
+            </h2>
+            <img src="sources/nfc.svg" alt="Wireless icon">
+        </div>
+        <div class="card__body">
+            <div class="chip__icon">
+                <img src="sources/chip.svg" alt="Chip icon">
+            </div>
+            <div class="card__number">
+                <div class="card-number-text">1234 5678 0987 6421</div>
+            </div>
+            <div class="card__footer">
+                <div class="card__info">
+                    <div class="card__expires">
+                        <p>VALID THRU</p>
+                        <div class="expiry-date-text">01/24</div>
+                    </div>
+                    <div class="card__holder">
+                        <div class="card-holder-text">DANIEL A DOMINGUEZ</div>
+                    </div>
+                </div>
+                <div class="cardtype__icon">
+                    <img src="sources/mastercard.svg" alt="Mastercard icon">
+                    <img src="sources/visa.svg" alt="Visa icon" hidden>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CREDIT CARD FORM -->
+    <div class="form__container">
+        <form action="" method="post" id="creditCardForm">
+            <div class="fields">
+                <div class="input__field">
+                    <label for="card__number">Número de tarjeta</label>
+                    <input type="tel" placeholder="1234 5678 0987 6421" maxlength="16" id="card__number" name="card__number" required>
+                    <small class="card__number-input--error"></small>
+                </div>
+                <div class="input__field">
+                    <label for="card__expires">Fecha Vencimiento</label>
+                    <input type="text" placeholder="mm/yy" maxlength="5" id="card__expires" name="card__expires" required>
+                    <small class="card__expires-input--error"></small>
+                </div>
+                <div class="input__field">
+                    <label for="card__holder">Nombre Titular</label>
+                    <input type="text" id="card__holder" name="card__holder" placeholder="DANIEL A DOMINGUEZ" maxlength="20" required>
+                    <small class="card__holder-input--error"></small>
+                </div>
+                <div class="input__field">
+                    <label for="cvv__code">CVV</label>
+                    <input type="password" id="cvv__code" name="cvv__code" pattern="[0-9]{3}" placeholder="***" maxlength="3" required>
+                    <small class="cvv-input--error"></small>
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="submit" class="submit">Agregar Tarjeta</button>
+                <button type="reset" class="reset">Cancelar</button>
+            </div>
+        </form> 
+    </div>
+    <!-- CARD ADDED CONTAINER -->
+    <div id="card__Container" class="card__Container">
+        <!-- Aquí se mostrarán las tarjetas agregadas -->
+    </div>
+    <!-- SCRIPTS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
