@@ -39,4 +39,29 @@
 
 ## Instrucciones para correr y probar el proyecto
 
-Para correr el proyecto
+### Por la Web
+
+Para correr el proyecto puedes ingresar al siguiente link el cual le dirige a la aplicación desplegada en internet:
+[Credit Card Form](https://creditcardform-ten.vercel.app)
+
+### En Local
+
+Para correr el código localmente debes seguir estos pasos:
+
+- Clonar este repositorio o descargarlo como ZIP.
+- Clonar o descargar el repositorio de la API Restful [aquí](https://github.com/StackOverNani10/api_creditcardform).
+- Tener NodeJS instalado en tu ordenador. Puedes obtenerlo desde [aquí](https://nodejs.org/).
+
+Para la API:
+
+- Abrir una terminal en la carpeta raíz del proyecto.
+- Correr `npm install` para instalar las dependencias necesarias.
+- Correr `npm start` para iniciar el servidor de desarrollo.
+- Ahora puedes abrir [http://localhost:3500](http://localhost:3500) en tu navegador web donde podrás ver funcionando la API.
+
+Para la aplicación web:
+
+- Abre/Ejecuta el index.html en un navegador para visualizar la aplicación web.
+- Llena el formulario con los datos correspondientes.
+- Presiona agregar para verificar los datos que desea agregar.
+- Verifica abajo del formulario la tarjeta agregada con los datos colocados en el formulario.
